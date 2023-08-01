@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2113.2">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;head&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;title&gt;Calculate Marks&lt;/title&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>body {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>width: 300px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>padding: 5px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>margin: 5px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>}</p>
+<p class="p1"><span class="Apple-converted-space">      </span>input {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>padding: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>margin: 5px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/head&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;body&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;h2&gt;Enter 5 marks:&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;input type="number" id="mark1" placeholder="Mark 1" /&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;input type="number" id="mark2" placeholder="Mark 2" /&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;input type="number" id="mark3" placeholder="Mark 3" /&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;input type="number" id="mark4" placeholder="Mark 4" /&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;input type="number" id="mark5" placeholder="Mark 5" /&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;button onclick="calculateAverageAndDisplay()"&gt;Grade&lt;/button&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>function calculateAverageAndDisplay() {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const mark1 = parseFloat(document.getElementById("mark1").value);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const mark2 = parseFloat(document.getElementById("mark2").value);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const mark3 = parseFloat(document.getElementById("mark3").value);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const mark4 = parseFloat(document.getElementById("mark4").value);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const mark5 = parseFloat(document.getElementById("mark5").value);</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>// Check if any input is empty</p>
+<p class="p1"><span class="Apple-converted-space">        </span>if (!mark1 || !mark2 || !mark3 || !mark4 || !mark5) {</p>
+<p class="p1"><span class="Apple-converted-space">          </span>alert("Please enter all 5 marks.");</p>
+<p class="p1"><span class="Apple-converted-space">          </span>return;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>const total = mark1 + mark2 + mark3 + mark4 + mark5;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const average = total / 5;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>if (average &gt; 30) {</p>
+<p class="p1"><span class="Apple-converted-space">          </span>alert("Congrats! You passed");</p>
+<p class="p1"><span class="Apple-converted-space">        </span>} else {</p>
+<p class="p1"><span class="Apple-converted-space">          </span>alert("Better luck next time");</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">      </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
